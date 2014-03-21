@@ -3,7 +3,9 @@
 
 # TEAM
 
-    <name> -- <role> -- <twitter>
+    tom -- old man  -- @buckley_tom
+    wendy -- chibi's mom -- @wfongsf
+    peter -- l33t hax0r -- @techieshark
 
 # THANKS
 
