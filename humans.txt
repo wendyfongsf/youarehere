@@ -1,0 +1,17 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    tom -- old man  -- @buckley_tom
+    wendy -- chibi's mom -- @wfongsf
+    peter -- l33t hax0r -- @techieshark
+
+# THANKS
+
+    <name>
+
+# TECHNOLOGY COLOPHON
+
+    HTML5, CSS3
+    jQuery, Modernizr
