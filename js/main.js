@@ -2,8 +2,10 @@
 
 (function() {
   var httpRequest;
-  var address = document.getElementById("ajaxTextbox").value;
-  document.getElementById("ajaxButton").onclick = function() { makeRequest('https://www.googleapis.com/civicinfo/us_v1/representatives/lookup?key=AIzaSyAzOF-EGWefl40wZ28RNwZLG4MRVQCw6cg',address); };
+
+  document.getElementById("ajaxButton").onclick = function() { 
+    var address = document.getElementById("ajaxTextbox").value;
+    makeRequest('https://www.googleapis.com/civicinfo/us_v1/representatives/lookup?key=AIzaSyAzOF-EGWefl40wZ28RNwZLG4MRVQCw6cg',address); };
 
   function makeRequest(url,address) {
     if (window.XMLHttpRequest) { // Mozilla, Safari, ...
@@ -26,10 +28,9 @@
     }
     httpRequest.onreadystatechange = alertContents;
     httpRequest.open('POST', url);
-
-/// problem seems to be here
     httpRequest.setRequestHeader('Content-Type','application/json;charset=UTF-8');
-    httpRequest.send(JSON.stringify({"address":address}));
+    var jsonparams = JSON.stringify({"address":address});
+    httpRequest.send(jsonparams);
   }
 
   function alertContents() {
